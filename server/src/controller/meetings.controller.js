@@ -14,10 +14,9 @@ const
  * @RestApi POST /meetings
  *          request body = {totalMeetings: <Number, OPTIONAL. Default to 5000>, topic: <String, required>}
  *
- * This method tries to create 5000 meetings in the database. If the database is empty then first meeting will be create for
+ * This method creates 5000 meetings in the database. If the database is empty then first meeting will be scheduled after
  * 1 hour from now (just to keep some buffer time :)) and rest of the meetings will be kept from 5 minutes gap from each other.
  *
- * If database already has
  *
  * An example output response is as below:
  * {insertedMeetings: <Number>, errorMeetings: <Number, total number of meetings not created>}
