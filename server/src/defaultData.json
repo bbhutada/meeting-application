@@ -1,0 +1,7 @@
+{
+  "participants": ["John", "Erika", "Steven", "James", "Andrew", "Stephanie", "Michael", "Dave", "Julia", "Adams"],
+  "hoursRange": {
+    "minimum": 1,
+    "maximum": 8
+  }
+}

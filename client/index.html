@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting Application</title>
+    <script src="/index.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h3>1. Create meetings: </h3>
+            </td>
+            <td>
+               Number of meetings to create (OPTIONAL) <input type="text" id="totalMeetingsToCreate"/> DEFAULT = 5000
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result: </h4>
+            </td>
+            <td>
+                <div id="createdMeetingsResult"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="createMeetingButton" type="button" onclick="meetingsManager.createMeetings('createdMeetingsResult', 'createMeetingButton', 'totalMeetingsToCreate')">Create Meetings</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h3>2. Get average participants in meeting: </h3>
+            </td>
+            <td>
+                Number of meetings to consider (OPTIONAL) <input type="text" id="averageParticipantsMeetings"/> DEFAULT = 20
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result: </h4>
+            </td>
+            <td>
+                <div id="averageParticipantsResult"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="averageParticipantsButton" type="button" onclick="meetingsManager.getAverageParticipants('averageParticipantsResult', 'averageParticipantsButton', 'averageParticipantsMeetings')">Get Average Participants</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h3>3. Get average meetings per month: </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result: </h4>
+            </td>
+            <td>
+                <div id="averageMeetingsPerMonthResult"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="averageMeetingsPerMontButton" type="button" onclick="meetingsManager.getAverageMeetingsPerMonth('averageMeetingsPerMonthResult', 'averageMeetingsPerMontButton')">Get Average meetings per month</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h3>4. Get next meetings schedule per person: </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result (Scrollable): </h4>
+            </td>
+            <td>
+                <div id="nextMeetingScheduleResult" style="overflow-y: scroll; height:200px;"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="nextMeetingScheduleButton" type="button" onclick="meetingsManager.getNextMeetingSchedulePerPerson('nextMeetingScheduleResult', 'nextMeetingScheduleButton')">Get next meeting schedule</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h3>5. Get upcoming meetings: </h3>
+            </td>
+            <td>
+                Number of meetings to consider (OPTIONAL) <input type="text" id="upcomingMeetingsLimit"/> DEFAULT = 5
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result (Scrollable): </h4>
+            </td>
+            <td>
+                <div id="upcomingMeetingResult" style="overflow-y: scroll; height:200px;"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="upcomingMeetingButton" type="button" onclick="meetingsManager.getUpcomingMeetings('upcomingMeetingResult', 'upcomingMeetingButton', 'upcomingMeetingsLimit')">Get upcoming meetings</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h3>5. Total Meetings: </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4> Result: </h4>
+            </td>
+            <td>
+                <div id="totalMeetingsResult"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="totalMeetingsButton" type="button" onclick="meetingsManager.getTotalMeetings('totalMeetingsResult', 'totalMeetingsButton')">Get Total meetings count</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
