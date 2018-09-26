@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Meeting Application</title>
+    <link rel="stylesheet" href="/index.css">
     <script src="/index.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <h4> Result: </h4>
             </td>
             <td>
-                <div id="createdMeetingsResult"></div>
+                <pre><div id="createdMeetingsResult" class="fixWidthAndHeight resultContainer"></div></pre>
             </td>
         </tr>
         <tr>
@@ -42,7 +43,7 @@
                 <h4> Result: </h4>
             </td>
             <td>
-                <div id="averageParticipantsResult"></div>
+                <pre><div id="averageParticipantsResult" class="fixWidthAndHeight resultContainer"></div></pre>
             </td>
         </tr>
         <tr>
@@ -61,7 +62,7 @@
                 <h4> Result: </h4>
             </td>
             <td>
-                <div id="averageMeetingsPerMonthResult"></div>
+                <pre><div id="averageMeetingsPerMonthResult" class="fixWidthAndHeight resultContainer"></div></pre>
             </td>
         </tr>
         <tr>
@@ -80,7 +81,7 @@
                 <h4> Result (Scrollable): </h4>
             </td>
             <td>
-                <div id="nextMeetingScheduleResult" style="overflow-y: scroll; height:200px;"></div>
+                <pre><div id="nextMeetingScheduleResult" class="resultContainer scrollableContent"></div></pre>
             </td>
         </tr>
         <tr>
@@ -102,7 +103,7 @@
                 <h4> Result (Scrollable): </h4>
             </td>
             <td>
-                <div id="upcomingMeetingResult" style="overflow-y: scroll; height:200px;"></div>
+                <pre><div id="upcomingMeetingResult" class="resultContainer scrollableContent"></div></pre>
             </td>
         </tr>
         <tr>
@@ -121,7 +122,7 @@
                 <h4> Result: </h4>
             </td>
             <td>
-                <div id="totalMeetingsResult"></div>
+                <pre><div id="totalMeetingsResult" class="fixWidthAndHeight resultContainer"></div></pre>
             </td>
         </tr>
         <tr>

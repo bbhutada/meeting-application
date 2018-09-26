@@ -1,0 +1,14 @@
+.fixWidthAndHeight {
+    width: 544px;
+    height: 30px;
+}
+
+.resultContainer {
+    background-color: lightblue;
+}
+
+.scrollableContent {
+    overflow: scroll;
+    height: 200px;
+    width: 544px;
+}
