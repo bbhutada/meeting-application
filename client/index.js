@@ -2,7 +2,7 @@
  * User: bhagyashri.bhutada
  */
 
-window.meetingsManager = ( () => {
+const meetingsManager = ( () => {
     const
         CREATE_MEETING_URL = '/meetings',
         AVERAGE_PARTICIPANTS_URL = '/meetings/average/participants',
@@ -12,7 +12,7 @@ window.meetingsManager = ( () => {
         TOTAL_MEETINGS_URL = '/meetings/total';
 
     function clearResult( domId ){
-        document.getElementById(domId).innerText = "LOADIN";
+        document.getElementById(domId).innerText = "LOADING";
     }
 
     function addResult( domId, resultJson, prettyFormat ) {
